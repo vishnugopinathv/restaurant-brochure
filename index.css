@@ -230,7 +230,7 @@ nav ul{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 1.5rem;
+    gap: 2.5rem;
     align-items: center;
     position: relative;
     border: 2px solid;
@@ -250,7 +250,7 @@ nav ul{
 }
 .review-box p{
     font-style: italic;
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 .review-box i{
     position: absolute;
