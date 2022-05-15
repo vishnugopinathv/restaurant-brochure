@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Royal Restaurant</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald&family=Poppins:wght@500&family=Source+Code+Pro:wght@500&family=Ubuntu:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body>
+    <header>
+      <div class="heading">
+        <h1><img src="./crown.png" alt="" />Royal</h1>
+      </div>
+      <nav>
+        <ul id="navbar">
+          <li><a href="#home" class="nav-btn">HOME</a></li>
+          <li><a href="#menu" class="nav-btn">MENU</a></li>
+          <li><a href="#booking" class="nav-btn">BOOKING</a></li>
+          <li><a href="#about" class="nav-btn">ABOUT</a></li>
+        </ul>
+      </nav>
+      <i class="fa-solid fa-bars" id="burgerbtn"></i>
+    </header>
+    <section id="home">
+      <div class="home-container">
+        <div class="home-heading">
+          <h1>
+            Welcome to <br />
+            Royal Restaurant
+          </h1>
+          <p>wake your tastebuds up, we are here to serve your cravings.</p>
+        </div>
+        <div class="checkout">
+            <a href="#menu">
+              <div id="checkout-btn" class="checkout-btns">MENU</div>
+            </a>
+            <a href="#booking">
+              <div id="book-btn" class="checkout-btns">BOOK A TABLE</div>
+            </a>
+        </div>
+      </div>
+    </section>
+    <section id="menu">
+      <div class="menu-container">
+        <h1>Our Menu</h1>
+        <div class="option-buttons">
+            <button id="breakfast" class="option-btn">
+                BreakFast
+            </button>
+            <button id="lunch" class="option-btn">
+                Lunch
+            </button>
+            <button id="dinner" class="option-btn">
+                Dinner
+            </button>
+        </div>
+        <div class="menu-item-container">
+          
+        </div>
+      </div>
+    </section>
+    <section id="reviews">
+        <div class="review-container">
+          <h1>Reviews</h1>
+          <div class="review-box">
+              <img src="" alt="" id="reviewimg">
+              <h1 id="customer"></h1>
+              <p id="review">
+              </p>
+              <i class="fa-solid fa-chevron-left left-arrow"></i>
+              <i class="fa-solid fa-chevron-right right-arrow"></i>
+            <div class="review">
+
+            </div>
+          </div>
+        </div>
+    </section>
+    <section id="booking">
+      <div class="booking-container">
+        <h1>Reservation</h1>
+        <form action="" id="bookform">
+          <div class="customer-details">
+            <input type="text" placeholder="Your Name" required>
+            <input type="text" placeholder="Your Contact Number" required>
+          </div>
+          <div class="customer-count">
+            <label for=""></label>
+            <input type="number" placeholder="No of people:" step="1" required>
+          </div>
+          <textarea name="" id="" cols="30" rows="10" placeholder="Remarks"></textarea>
+          <input type="submit" value="submit" id="submitbtn">
+        </form>
+      </div>
+    </section>
+    <section id="questions">
+        <div class="question-container">
+          <h1>Questions</h1>
+          <div class="question-box">
+            <div class="question">
+              Do you guys accept credit cards?
+              <i class="fa-regular fa-square-plus btn"></i>
+            </div>
+            <div class="answer">
+              Yes, we accept all major credit cards and we also have payment options like upi.
+            </div>
+          </div>
+          <div class="question-box">
+            <div class="question">
+              Do you serve cold beverages?
+              <i class="fa-regular fa-square-plus btn"></i>
+            </div>
+            <div class="answer">
+              No. at the moment we only have hot beverages like tea and coffee and bottled cold drinks. But we are planning to add it on our menu.
+            </div>
+          </div>
+          <div class="question-box">
+            <div class="question">
+              I'm a vegetarian and a little concerned about your mixed menu
+              <i class="fa-regular fa-square-plus btn"></i>
+            </div>
+            <div class="answer">
+              we understand your concern , we have different kitchen sections for veg and non-veg 
+            </div>
+          </div>
+          <div class="question-box">
+            <div class="question">
+              Do you Have parking facility?
+              <i class="fa-regular fa-square-plus btn"></i>
+            </div>
+            <div class="answer">
+              Yes , we have a underground parking facilty with a capacity of upto 25 cars.
+            </div>
+          </div>
+        </div>
+    </section>
+    <section id="about">
+      <div class="about-container">
+        <h1>About us</h1>
+        <div class="about-box">
+          <div class="about-header">
+            <div class="about-box-head">vision</div>
+            <div class="about-box-head">Branches</div>
+            <div class="about-box-head">Contact</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="./index.js"></script>
+  </body>
+</html>
