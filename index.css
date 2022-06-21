@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -372,6 +373,7 @@ nav ul{
     font-size: 0.9rem;
     height: 0;
     overflow-y: hidden;
+    line-height: 1.6;
     padding: 0rem 3rem;
     transition: all 0.4s ease-in-out ;
 }
@@ -397,8 +399,35 @@ nav ul{
 .about-box{
     width: 95%;
     max-width: 60rem;
-    height: 30rem;
     background-color:rgb(227, 227, 227);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    font-family:'Montserrat',sans-serif;
+    padding: 1rem 3rem;
+    line-height: 1.6;
+}
+.icons a{
+    font-size: 1.5rem;
+    color: black;
+    padding-right: 1rem;
+}
+.icons a:hover{
+    color: dodgerblue;
+}
+.icons{
+    margin-top: 1rem;
+}
+.about-box h1{
+    font-size: 2rem;
+    padding: .5rem;
+}
+.branches ul{
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
 }
 #about{
     background-image: url("./about-image.jpg");
@@ -419,33 +448,13 @@ nav ul{
     font-family: 'Ubuntu',sans-serif;
     padding: 3rem 0;
 }
-.about-box-head{
-    padding: 1rem;
-    background-color: rgb(128, 128, 128,0.5);
-    width: 33.33%;
-    text-align: center;
-    font-family: 'Poppins',sans-serif;
-    cursor: pointer;
-}
-.about-box-head:hover{
-    background-color:rgb(227, 227, 227);
-    color: rgb(30, 144, 255,0.75);
-}
-.active-box-head{
-    background-color:rgb(227, 227, 227);
-    color: dodgerblue;
-}
-.about-header{
-    display: flex;
-    justify-content: space-around;
-}
 #burgerbtn{
     font-size: 2rem;
     cursor: pointer;
     display: none;
     position: absolute;
-    top: 1.5rem;
-    right: 1.5rem;
+    top: 2.5rem;
+    right: 2.5rem;
     outline: none;
 }
 @media (max-width:1150px) {
@@ -527,6 +536,10 @@ nav ul{
         left: 1.25rem;
         top: 1.25rem;
         font-size: 2.25rem;
+    }
+    #burgerbtn{
+        top: 1.5rem;
+        right:1.5rem;
     }
     header{
         height: 5rem;

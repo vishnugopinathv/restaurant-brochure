@@ -205,19 +205,16 @@ const reviews=[{
 ];
 const about=[
     {
-        title:"vision",
-        img:"",
-        description:""
+        title:"Vision",
+        description:"vision"
     },
     {
-        title:"vision",
-        img:"",
-        description:""
+        title:"Branches",
+        description:"contact"
     },
     {
-        title:"vision",
-        img:"",
-        description:""
+        title:"Contact",
+        description:"contact"
     },
 ]   
 
@@ -334,8 +331,12 @@ for(let i=0;i<btn.length;i++){
     })
 }
 const boxHead= document.querySelectorAll(".about-box-head");
+const boxDesc=document.querySelector(".about-desc")
 for(let i=0;i<boxHead.length;i++){
     boxHead[i].addEventListener('click',()=>{
+        const filtered=about.find(v=>{
+            v.title=boxHead[i].id;
+        })
         boxHead[i].classList.add("active-box-head");
     for(let j=0;j<boxHead.length;j++){
         if(boxHead[j].classList.contains("active-box-head")&&(i!==j)){
@@ -352,6 +353,9 @@ burgerBtn.addEventListener('click',()=>{
     burgerBtn.classList.toggle("fa-xmark");
     if(!header.classList.contains("active-header")){
         header.classList.toggle("active-header");
+    }
+    else if((window.pageYOffset<100)){
+        header.classList.remove("active-header")
     }
 })
 for(let i=0;i<navBtn.length;i++){
